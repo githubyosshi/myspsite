@@ -60,3 +60,7 @@ header h1 {
 .news-item img {
   width: 100%;
 }
+
+.how-to-use iframe {
+  width: 100%;
+}
