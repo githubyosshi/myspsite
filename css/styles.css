@@ -39,13 +39,47 @@ header h1 {
   font-weight: normal;
 }
 
+/* ブラウザ左上起点 */
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .9);
+  color: #fff;
+  display: none;    /* 初期値は非表示*/
+}
+
+#menu.shown {
+  display: block;
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#menu li {
+  line-height: 2;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;  /*親要素から引継ぐ*/
+}
+
 #open_menu {
   float: right;
   font-size: 24px;
   cursor: pointer;
 }
 
-
+#close_menu {
+  padding: 15px;
+  float: right;
+  cursor: pointer;
+}
 
 /* 画像が大きすぎたので調整 */
 .feature img {
@@ -83,4 +117,10 @@ x% = 9 * 100% / 16 = 56.25%
   height: 0;
   /* 絶対配置 */
   position: relative;
+}
+
+footer {
+  text-align: center;
+  padding: 60px 0;
+  color: #ccc;
 }
