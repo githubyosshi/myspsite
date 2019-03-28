@@ -15,3 +15,13 @@ header h1 {
   font-size: 28px;
   font-weight: normal;
 }
+
+#open_menu {
+  float: right;
+  font-size: 24x;
+  cursor: pointer;
+}
+
+.feature img {
+  width: 100%;
+}

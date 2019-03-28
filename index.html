@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>My App</title>
+  <!-- fontawesomeサイトの読み込み用スクリプトを貼り付け -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/styles.css">
   <!-- スマホ画面幅、ズーム幅等倍 -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,9 +13,28 @@
 <body>
   <header>
     <div class="container">
+      <!-- fontawesomeサイトのIconsからmenuで検索してbars貼り付けて、JS用にid属性を付ける -->
+      <i id="open_menu" class="fas fa-bars"></i>
       <h1>My App</h1>
-
     </div>
   </header>
+
+  <section class="features">
+    <div class="container">
+      <h1>Features</h1>
+      <section class="feature">
+        <img src="img/feature1.png">
+        <p>hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, </p>
+      </section>
+      <section class="feature">
+        <img src="img/feature2.png">
+        <p>hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, </p>
+      </section>
+      <section class="feature">
+        <img src="img/feature3.png">
+        <p>hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, hello, </p>
+      </section>
+    </div>
+  </section>
 </body>
 </html>
