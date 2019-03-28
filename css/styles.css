@@ -64,3 +64,7 @@ header h1 {
 .how-to-use iframe {
   width: 100%;
 }
+
+.how-to-use .iframe-wrapper {
+  background: pink;
+}
