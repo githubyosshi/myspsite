@@ -11,6 +11,11 @@ body {
   margin: 0 auto;
 }
 
+/* 文書行間を広げる */
+p {
+  line-height: 2;
+}
+
 header h1 {
   font-size: 28px;
   font-weight: normal;
@@ -18,10 +23,27 @@ header h1 {
 
 #open_menu {
   float: right;
-  font-size: 24x;
+  font-size: 24px;
   cursor: pointer;
 }
 
+.features {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.feature h1 {
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 60px;
+}
+
+/* 画像が大きすぎたので調整 */
 .feature img {
   width: 100%;
+}
+
+/* 最後のmarginは付けない */
+.feature:not(:last-child) {
+  margin-bottom: 60px;
 }
