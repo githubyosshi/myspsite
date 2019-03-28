@@ -47,3 +47,7 @@ header h1 {
 .feature:not(:last-child) {
   margin-bottom: 60px;
 }
+
+.news-item img {
+  width: 100%;
+}
