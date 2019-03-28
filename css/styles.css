@@ -11,6 +11,24 @@ body {
   margin: 0 auto;
 }
 
+/* .features { */
+body > section {    /* body直下のsection*/
+  padding: 60px 0;
+  /* background: #fff; */
+}
+
+/* 奇数番目が白にする */
+body > section:nth-of-type(odd) {
+  background: #fff;
+}
+
+/* .feature h1 { */
+.section-title {
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 60px;
+}
+
 /* 文書行間を広げる */
 p {
   line-height: 2;
@@ -27,16 +45,7 @@ header h1 {
   cursor: pointer;
 }
 
-.features {
-  padding: 60px 0;
-  background: #fff;
-}
 
-.feature h1 {
-  text-align: center;
-  font-weight: normal;
-  margin: 0 0 60px;
-}
 
 /* 画像が大きすぎたので調整 */
 .feature img {
