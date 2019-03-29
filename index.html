@@ -78,9 +78,15 @@
   <footer>
     &copy; dotinstall.com
   </footer>
-
+<!-- 要素取得しクリックした時にアラート表示 -->
   <script>
-    document.getElementById('open_menu').addEventListener('click',function() {alert('Clicked!'); });
+    // 変数に置き換え
+    var openMenu = document.getElementById('open_menu');
+
+  // document.getElementById('open_menu').addEventListener('click',function() {alert('Clicked!'); });
+    openMenu.addEventListener('click',function() {
+      alert('Clicked!');
+    });
   </script>
 </body>
 </html>
