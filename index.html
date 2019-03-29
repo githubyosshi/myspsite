@@ -70,7 +70,7 @@
       <h1 class="section-title">How to use</h1>
       <div class="iframe-wrapper">
       <!-- 動画上で右クリックで埋め込みコードをコピー -->
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/QrbYdJDJEb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QrbYdJDJEb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -80,13 +80,23 @@
   </footer>
 <!-- 要素取得しクリックした時にアラート表示 -->
   <script>
-    // 変数に置き換え
-    var openMenu = document.getElementById('open_menu');
+    (function() {
+      'use strict';
 
-  // document.getElementById('open_menu').addEventListener('click',function() {alert('Clicked!'); });
-    openMenu.addEventListener('click',function() {
-      alert('Clicked!');
-    });
+      // 変数に置き換え
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+
+      // document.getElementById('open_menu').addEventListener('click',function() {alert('Clicked!'); });
+      openMenu.addEventListener('click', function() {
+        //  alert('Clicked!');
+        menu.classList.add('shown');
+      });
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+    })();
   </script>
 </body>
 </html>
