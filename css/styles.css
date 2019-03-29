@@ -129,16 +129,42 @@ footer {
 
 /* medium screens */
 
-/* 指定の値を超えたら色を変える */
 @media (min-width: 570px) {
+  /* 指定の値を超えたら色を変える */
   body {
     background: skyblue;
+  }
+
+  .feature img {
+    width: 50%;
+  }
+
+  .feature p {
+    width: 45%;
+  }
+
+/* 奇数番目はpを右にする */
+  .feature:nth-of-type(odd) p {
+    float: right;
+    padding-left: 5%;
+  }
+
+/* 偶数番目はpを左にする */
+  .feature:nth-of-type(even) p {
+    float: left;
+    padding-right: 5%;
+  }
+
+  /* フロート解除 */
+  .feature {
+    overflow: hidden;
   }
 }
 
 /* large screens */
 
 @media (min-width: 912px) {
+  /* 指定の値を超えたら色を変える */
   body {
     background: lime;
   }
