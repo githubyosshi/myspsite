@@ -97,6 +97,10 @@ header h1 {
   width: 100%;
 }
 
+.news-item img:not(:last-child) {
+  margin-bottom: 60px;
+}
+
 .how-to-use iframe {
   /* 絶対配置 */
   position: absolute;
@@ -201,5 +205,18 @@ footer {
     position: static;
     background: transparent;
     color: #333;
+  }
+
+/* 余白削除、メニュー右寄せ */
+  #menu ul {
+    padding: 0;
+    float: right;
+  }
+
+/* 横並び */
+  #menu li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
   }
 }
