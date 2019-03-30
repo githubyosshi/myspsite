@@ -159,7 +159,18 @@ footer {
   .feature {
     overflow: hidden;
   }
+
+/* 横並びで間を均等に余白 */
+  .news .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .news-item {
+    width: 30%;
+  }
 }
+
 
 /* large screens */
 
