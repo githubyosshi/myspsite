@@ -179,4 +179,27 @@ footer {
   body {
     background: lime;
   }
+
+/* ある程度広げると幅固定 */
+  .container {
+    width: 820px;
+  }
+
+/* メニューボタン非表示 */
+  #open_menu {
+    display: none;
+  }
+
+/* 閉じるボタン非表示 */
+  #close_menu {
+    display: none;
+  }
+
+/* positionを規定値staticに戻し、背景は透明 */
+  #menu {
+    display: block;
+    position: static;
+    background: transparent;
+    color: #333;
+  }
 }
